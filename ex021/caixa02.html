@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #C78FE3;
+            margin: 0px;
+        }
+        header {
+            background-color: #BB86D6;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 5px 3px 7px 1px #00000067;
+            border-radius: 10px 0px;
+        }
+
+        nav {
+            background-color: #845F96;
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px #00000067;
+            border-radius: 10px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: #BB86D6;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 3px 7px 1px #00000067;
+        }
+
+        article {
+            background-color: #E5B7F0;
+            padding: 5px;
+            box-shadow: 5px 3px 7px 1px #00000067;
+            border-radius: 10px 0px;
+        }
+
+        article > aside {
+            background-color: #A577BD;
+        }
+
+        footer {
+            background-color: #4C3757;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            box-shadow: 5px 3px 7px 1px #00000067;
+            border-radius: 10px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MEU SITE</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Empreendedorismo Tecnologia Política</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Tecnologia</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nulla eius itaque sed alias modi obcaecati neque, rem, doloremque voluptates nisi voluptate ab maiores culpa quod, minus blanditiis inventore provident? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt dolores assumenda fugit deserunt blanditiis, quibusdam possimus a magni animi, nihil inventore porro beatae suscipit ipsam quo sequi iure officiis? Optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ex, impedit soluta omnis necessitatibus ipsam deserunt at. Quam magnam quas, reiciendis rem, totam ad numquam, in commodi error labore maiores!</p>
+                    <aside>
+                        <p>Artigo escrito por Ana Julia</p>
+                    </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pela Ana Julia</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

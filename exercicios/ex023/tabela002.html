@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,9 +21,30 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
         }
 
         td.num {
@@ -35,6 +57,7 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES 
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -43,10 +66,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -162,10 +186,25 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>217.696.196</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga optio minima cum quidem vitae sapiente perspiciatis asperiores quia excepturi. Rerum ipsam esse impedit porro commodi, incidunt neque eligendi doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum officiis impedit nobis ratione repudiandae numquam nesciunt. Recusandae libero, ab ex, sapiente praesentium facilis mollitia non porro nostrum architecto aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad alias, nisi dolores officiis, cupiditate sunt quos, aliquid mollitia exercitationem dicta. Consequatur dolore quos perferendis culpa laboriosam laudantium enim debitis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga optio minima cum quidem vitae sapiente perspiciatis asperiores quia excepturi. Rerum ipsam esse impedit porro commodi, incidunt neque eligendi doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum officiis impedit nobis ratione repudiandae numquam nesciunt. Recusandae libero, ab ex, sapiente praesentium facilis mollitia non porro nostrum architecto aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad alias, nisi dolores officiis, cupiditate sunt quos, aliquid mollitia exercitationem dicta. Consequatur dolore quos perferendis culpa laboriosam laudantium enim debitis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga optio minima cum quidem vitae sapiente perspiciatis asperiores quia excepturi. Rerum ipsam esse impedit porro commodi, incidunt neque eligendi doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum officiis impedit nobis ratione repudiandae numquam nesciunt. Recusandae libero, ab ex, sapiente praesentium facilis mollitia non porro nostrum architecto aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad alias, nisi dolores officiis, cupiditate sunt quos, aliquid mollitia exercitationem dicta. Consequatur dolore quos perferendis culpa laboriosam laudantium enim debitis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga optio minima cum quidem vitae sapiente perspiciatis asperiores quia excepturi. Rerum ipsam esse impedit porro commodi, incidunt neque eligendi doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum officiis impedit nobis ratione repudiandae numquam nesciunt. Recusandae libero, ab ex, sapiente praesentium facilis mollitia non porro nostrum architecto aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad alias, nisi dolores officiis, cupiditate sunt quos, aliquid mollitia exercitationem dicta. Consequatur dolore quos perferendis culpa laboriosam laudantium enim debitis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga optio minima cum quidem vitae sapiente perspiciatis asperiores quia excepturi. Rerum ipsam esse impedit porro commodi, incidunt neque eligendi doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum officiis impedit nobis ratione repudiandae numquam nesciunt. Recusandae libero, ab ex, sapiente praesentium facilis mollitia non porro nostrum architecto aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad alias, nisi dolores officiis, cupiditate sunt quos, aliquid mollitia exercitationem dicta. Consequatur dolore quos perferendis culpa laboriosam laudantium enim debitis?
+    </p>
 </body>
 </html>
